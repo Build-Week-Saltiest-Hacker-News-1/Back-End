@@ -1,7 +1,5 @@
 const express = require("express");
 
-const db = require("../data/dbConfig.js");
-
 const Comments = require("./commentsModel.js");
 
 const router = express.Router();
@@ -24,7 +22,7 @@ router.post("/", (req, res) => {
       res.status(201).json(comment);
     })
     .catch(err => {
-      res.status(500).json({ message: "Failed to salty comment" });
+      res.status(500).json({ message: "Failed to save salty comment" });
     });
 });
 

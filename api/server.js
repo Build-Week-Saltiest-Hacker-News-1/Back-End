@@ -21,8 +21,8 @@ server.use(cors());
 server.use(express.json());
 
 server.use("/api/auth", authRouter);
+server.use("/api/dashboard", authenticate, userRouter);
 server.use("/api/comments", authenticate, commentsRouter);
-server.use("/api/dashboard", userRouter);
 
 server.get("/", (req, res) => {
   res.status(200).json({ api: "API IS WORKING!!", dbenv: process.env.DB_ENV });
