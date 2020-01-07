@@ -36,11 +36,11 @@ router.delete("/:id", (req, res) => {
       } else {
         res
           .status(404)
-          .json({ message: "Could not find scheme with given id" });
+          .json({ message: "Could not find comment with given id" });
       }
     })
     .catch(err => {
-      res.status(500).json({ message: "Failed to delete scheme" });
+      res.status(500).json({ message: "Failed to delete comment" });
     });
 });
 
