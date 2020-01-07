@@ -6,6 +6,16 @@ const Users = require("./usersModel.js");
 
 const router = express.Router();
 
+router.get("/:id", (req, res) => {
+  Users.findById(req.params.id)
+    .then(user => {
+      res.json(user);
+    })
+    .catch(err => {
+      res.status(500).json({ message: "Failed to get specific user" });
+    });
+});
+
 router.put("/:id", (req, res) => {
   const { id } = req.params;
   const changes = req.body;
