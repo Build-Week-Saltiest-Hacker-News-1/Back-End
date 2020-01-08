@@ -48,7 +48,9 @@ router.post("/login", (req, res) => {
 //!create and sign the token
 function signToken(user) {
   const payload = {
-    user: user.user
+    id: user.id,
+    user: user.user,
+    email: user.email
   };
 
   const secret =
