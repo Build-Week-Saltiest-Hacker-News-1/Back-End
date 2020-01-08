@@ -30,6 +30,8 @@ router.post("/login", (req, res) => {
         const token = signToken(user);
         // send the token
         res.status(200).json({
+          id: user.id,
+          email: user.email,
           token, // added token as part of the response sent
           message: `Welcome ${user.user}!`
         });
