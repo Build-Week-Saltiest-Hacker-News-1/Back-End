@@ -12,7 +12,7 @@ exports.up = function(knex) {
     comments.string("saltyUsername", 125).notNullable();
     comments.integer("comment_id");
     comments.integer("saltyRank").notNullable();
-    comments.string("saltyComment", 900).notNullable();
+    comments.string("saltyComment").notNullable();
   });
 };
 
