@@ -3,7 +3,6 @@ exports.up = function(knex) {
     feed.increments();
     feed
       .integer("user_id")
-      .notNullable()
       .unsigned()
       .references("id")
       .inTable("users")
@@ -11,6 +10,7 @@ exports.up = function(knex) {
       .onDelete("CASCADE");
     feed.string("saltyUsername", 125).notNullable();
     feed.integer("saltyRank").notNullable();
+    feed.integer("comment_id");
     feed.string("saltyComment", 900).notNullable();
   });
 };
