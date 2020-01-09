@@ -11,7 +11,7 @@ function find() {
   return db("comments");
 }
 function findById(id) {
-  return db("comments").where({ id });
+  return db("comments").where("user_id", "=", id);
 }
 function add(comment) {
   return db("comments")

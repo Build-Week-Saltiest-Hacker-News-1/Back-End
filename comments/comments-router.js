@@ -4,8 +4,9 @@ const Comments = require("./commentsModel.js");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  Comments.find()
+router.get("/:id", (req, res) => {
+  let id = req.params.id;
+  Comments.findById(id)
     .then(comments => {
       res.json(comments);
     })
@@ -19,7 +20,7 @@ router.post("/", (req, res) => {
 
   Comments.add(commentData)
     .then(comment => {
-      res.status(201).json(comment);
+      res.status(201).json(commentData);
     })
     .catch(err => {
       res.status(500).json({ message: "Failed to save salty comment" });
