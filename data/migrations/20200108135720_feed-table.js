@@ -11,7 +11,7 @@ exports.up = function(knex) {
     feed.string("saltyUsername", 125).notNullable();
     feed.integer("saltyRank").notNullable();
     feed.integer("comment_id");
-    feed.string("saltyComment", 900).notNullable();
+    feed.string("saltyComment", 1500).notNullable();
   });
 };
 
