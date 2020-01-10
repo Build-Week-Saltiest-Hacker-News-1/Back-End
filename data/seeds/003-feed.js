@@ -9,13 +9,6 @@ exports.seed = function(knex) {
       saltyRank: 42
     },
     {
-      saltyUsername: "ausjke",
-      saltyComment:
-        "Huawei had to license synopsys/cadence/mentor to design their chip(which is using ARM core), if US really wants to play hardball Huawei's IC design can be killed nearly instantly once those CAD design software is forbidden. In the meantime I heard Huawei etc bought a few years' license right before the trade war, they're actually well prepared. Another way is to restrict chip manufacturing, Taiwan pretty much owns the best technology for that(TSMC), Intel/Samsung has some, Huawei has none. And you have Android to some degree, without Android there is no Smartphone dominance from China as of now. Open source in general helped China to catch up and overtake the west extremely efficiently, you don't need any business spies anymore, just download/modify/profit. At the moment USA still has the possibility to contain IC ecosystem if it really wants to do that. In 10~20 years it will be a different story though, by then USA might not have much leverage if anything at all left.",
-      comment_id: 21678985,
-      saltyRank: 55
-    },
-    {
       saltyUsername: "mgolawala",
       saltyComment:
         '"Bad men need nothing more to compass their ends, than that good men should look on and do nothing" - John Stuart Mill. Often quoted as "The only thing necessary for the triumph of evil is for good men to do nothing". The world needs people like you to speak up, to keep people like them in check. Do it anonymously if it suits you, but please do it.',
