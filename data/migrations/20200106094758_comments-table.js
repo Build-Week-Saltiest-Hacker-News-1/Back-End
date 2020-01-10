@@ -10,9 +10,9 @@ exports.up = function(knex) {
       .onUpdate("CASCADE")
       .onDelete("CASCADE");
     comments.string("saltyUsername", 500).notNullable();
-    comments.integer("comment_id");
-    comments.integer("saltyRank").notNullable();
-    comments.string("saltyComment").notNullable();
+    comments.integer("comment_id", 500);
+    comments.integer("saltyRank", 500).notNullable();
+    comments.string("saltyComment", 900).notNullable();
   });
 };
 
