@@ -56,13 +56,6 @@ exports.seed = function(knex) {
       saltyRank: 51
     },
     {
-      saltyUsername: "awinder",
-      saltyComment:
-        "Kind-of alluded to in the article, but if you\u2019re going to unbundle AWS, you\u2019re going to have to figure out how to get the bandwidth 0-rated. One of amazons biggest moats (imo) is that they can realize monumental cost savings on bandwidth while making it very pricy to other service providers. So if you need to architect bandwidth-hungry or \u201chigh scale\u201d applications, going outside of AWS becomes way too expensive. Even privatelink tacks on bandwidth charges. You\u2019d have to look at DB providers like Elastic to see how to do this, I think. But it\u2019s going to involve a very complex and high touch deployment & support environment. This effectively \u201cprices out\u201d certain classes of applications as too expensive for value returned. Again I could be looking at this very wrong, and figuring out how to build profitable unbundled AWS services would be a great business, but it\u2019s hard to see how to successfully execute.",
-      comment_id: 21675857,
-      saltyRank: 55
-    },
-    {
       saltyUsername: "1000units",
       saltyComment:
         'In a world where "telling" people is enough, there is no evil.',
@@ -117,13 +110,6 @@ exports.seed = function(knex) {
         "If there's a way to bypass it, it will be used. By the authorized recyclers as well as the thieves (including government agencies).",
       comment_id: 21707152,
       saltyRank: 48
-    },
-    {
-      saltyUsername: "sacomo",
-      saltyComment:
-        "This is one of the most simplististic, reductionary arguments against socialism I have read. Anyone who uses the 'human nature' argument shouldn't be taken seriously. Especially with this article's mischaraterization of socialism in the first place. The idea that all of human nature can be boiled down to only the 'selfish' and 'greedy' traits is pretty insulting, and in this case, propagandistic. We really shouldn't continue nurturing the selfishness and greed traits on a mass scale as we currently do. Socialism is never about people working for free or forcing lazy people to work. Its about workers owning the means of production. Giving workers dignity and eliminating the oppresive employer - employee relationship. Slave owners also thought that they were unfairly being \"forced\" to give up their freedoms of owning people.",
-      comment_id: 21726353,
-      saltyRank: 63
     },
     {
       saltyUsername: "lern_too_spel",
