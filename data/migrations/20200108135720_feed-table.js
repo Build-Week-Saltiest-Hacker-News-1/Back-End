@@ -2,8 +2,8 @@ exports.up = function(knex) {
   return knex.schema.createTable("feed", feed => {
     feed.increments();
     feed.string("saltyUsername", 500).notNullable();
-    feed.integer("saltyRank").notNullable();
-    feed.integer("comment_id");
+    feed.integer("saltyRank", 500).notNullable();
+    feed.integer("comment_id", 500);
     feed.string("saltyComment", 900).notNullable();
   });
 };
