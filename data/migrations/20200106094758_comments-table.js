@@ -9,7 +9,7 @@ exports.up = function(knex) {
       .inTable("users")
       .onUpdate("CASCADE")
       .onDelete("CASCADE");
-    comments.string("saltyUsername", 125).notNullable();
+    comments.string("saltyUsername", 500).notNullable();
     comments.integer("comment_id");
     comments.integer("saltyRank").notNullable();
     comments.string("saltyComment").notNullable();
